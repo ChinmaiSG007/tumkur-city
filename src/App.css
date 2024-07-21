@@ -62,15 +62,25 @@
   transition: all 0.2s ease-in-out;
 }
 
-.container .parent-pin:hover {
+.box {
  
     width: 250px;
     height: 150px;
-    background-color: #020817;
-    border: solid 2px gray;
+    background-color: #ebebeb;
+    border: solid 4px gray;
     border-radius: 12px;
     
 }
 
-.first { left: 50.4%; top: 26.9%; } 
-.second { left: 32%; top: 24.7%; }
+.first { left: 50.4%; top: 30%; } 
+.first-m { left: 52.4%; top: 32%; } 
+.second { left: 32%; top: 40.7%; }
+.second-m { left: 34%; top: 41.7%; }
+.third { left: 50%; top: 60.5%; }
+.third-m { left: 52%; top: 62.5%; }
+.four { left: 75%; top: 62%; }
+.four-m { left: 77%; top: 64%; }
+
+.img-map{
+  opacity: 0.1;
+}

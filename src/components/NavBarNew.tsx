@@ -1,4 +1,3 @@
-import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
@@ -14,7 +13,7 @@ const navBarData = [
     submenu: [
       {
         label: "Orgainzation",
-        url: "/", 
+        url: "/",
       },
       {
         label: "Mission",
@@ -27,50 +26,50 @@ const navBarData = [
       {
         label: "Certification",
         url: "/",
-      }
+      },
     ],
   },
   {
     label: "E-Services",
     submenu: [
-        {
-          label: "Tour Map",
-          url: "/",
-        },
-        {
-          label: "Wards (in rows and columns)",
-          submenu: [
-            {
-              label: "Map",
-              url: "/",
-            },
-            {
-              label: "Survey Data",
-              url: "/",
-            },
-            {
-              label: "Co-ordinates",
-              url: "/",
-            },
-            {
-              label: "Auto CAD File",
-              url: "/",
-            }
-          ],
-        },
-      ],
+      {
+        label: "Tour Map",
+        url: "/",
+      },
+      {
+        label: "Wards (in rows and columns)",
+        submenu: [
+          {
+            label: "Map",
+            url: "/",
+          },
+          {
+            label: "Survey Data",
+            url: "/",
+          },
+          {
+            label: "Co-ordinates",
+            url: "/",
+          },
+          {
+            label: "Auto CAD File",
+            url: "/",
+          },
+        ],
+      },
+    ],
   },
   {
     label: "Documents",
     submenu: [
       {
         label: "Offline / Download",
-        url: "/", 
+        url: "/",
       },
       {
         label: "Tour map / Town planning documents",
         url: "/",
-      }
+      },
     ],
   },
   {
@@ -79,47 +78,47 @@ const navBarData = [
       {
         label: "Head",
         submenu: [
-            {
-              label: "Gmail",
-              url: "/", 
-            },
-            {
-              label: "Contact",
-              url: "/",
-            }
-          ]
+          {
+            label: "Gmail",
+            url: "/",
+          },
+          {
+            label: "Contact",
+            url: "/",
+          },
+        ],
       },
       {
         label: "Co-workers",
         submenu: [
-            {
-              label: "1",
-              submenu: [
-                {
-                  label: "Gmail",
-                  url: "/", 
-                },
-                {
-                  label: "Contact",
-                  url: "/",
-                }
-              ] 
-            },
-            {
-              label: "2",
-              submenu: [
-                {
-                  label: "Gmail",
-                  url: "/", 
-                },
-                {
-                  label: "Contact",
-                  url: "/",
-                }
-              ]
-            }
-          ]
-      }
+          {
+            label: "1",
+            submenu: [
+              {
+                label: "Gmail",
+                url: "/",
+              },
+              {
+                label: "Contact",
+                url: "/",
+              },
+            ],
+          },
+          {
+            label: "2",
+            submenu: [
+              {
+                label: "Gmail",
+                url: "/",
+              },
+              {
+                label: "Contact",
+                url: "/",
+              },
+            ],
+          },
+        ],
+      },
     ],
   },
 ];
@@ -132,8 +131,7 @@ const NavBarNew = () => {
           <NavDropdown
             title={item.label}
             key={index}
-            className="dropdown-menu-dark  
-                                       dropend"
+            className="dropdown-menu-dark dropend"
           >
             {menuShow(item.submenu)}
           </NavDropdown>
@@ -155,8 +153,8 @@ const NavBarNew = () => {
     <div>
       <Navbar bg="light" expand="lg" variant="light">
         <Navbar.Brand href="#home">
-          <h1>
-            <b>Heading</b>
+          <h1 className=" pl-3">
+            <b>P DAD</b>
           </h1>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -166,61 +164,6 @@ const NavBarNew = () => {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-
-      {/* <Navbar expand="lg" className="bg-body-tertiary">
-        <Container>
-          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <NavDropdown title="About Us" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">
-                  Organisation
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Mission</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Gallery</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Certification
-                </NavDropdown.Item>
-              </NavDropdown>
-              <NavDropdown title="E-Services" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Tour Map</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Wards in Rows and Column
-                </NavDropdown.Item>
-                <NavDropdown title="About Us" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#action/3.1">
-                    Organisation
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">
-                    Mission
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">
-                    Gallery
-                  </NavDropdown.Item>
-                </NavDropdown>
-              </NavDropdown>
-              <NavDropdown title="Documents" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">
-                  Organisation
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Offline / Download
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Tour map / Town planning documents
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Certification
-                </NavDropdown.Item>
-              </NavDropdown>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar> */}
     </div>
   );
 };
