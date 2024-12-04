@@ -1,13 +1,26 @@
 import mainMap from "./../images/main-map.webp";
 import "./App.css";
+import About from "./components/About";
+import Header from "./components/Header";
+import Home from "./components/Home";
 import ImageComponent from "./components/ImageComponent";
 import NavBarNew from "./components/NavBarNew";
 
 function App() {
+  const renderPage = () => {
+    if (window.location.pathname === "/about") {
+      return <About text="About Us" />;
+    } else if (window.location.pathname === "/wards") {
+      return <About text="Wards" />;
+    } else {
+      return <Home />;
+    }
+  };
   return (
     <>
-      <NavBarNew />
-      <div className="relative">
+      <Header />
+      <div>{renderPage()}</div>
+      {/* <div className="relative">
         <img src={mainMap} className="img-map" />
         <div className="absolute top-8 border border-gray-700 rounded-lg bg-gray-50/50 p-3">
           <h2 className="text-xl font-bold pb-3 text-left	">Need for Study</h2>
@@ -21,8 +34,8 @@ function App() {
             information.
           </p>
         </div>
-      </div>
-      <ImageComponent />
+      </div> */}
+      {/* <ImageComponent /> */}
       {/* <img src={Test} alt="Map" /> */}
     </>
   );
