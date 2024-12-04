@@ -1,6 +1,3 @@
-import React from "react";
-import PopUpBox from "./PopUpBox";
-
 const About = ({ text }: any) => {
   return (
     <div className="p-4 h-screen">

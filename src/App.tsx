@@ -1,10 +1,7 @@
-import mainMap from "./../images/main-map.webp";
 import "./App.css";
 import About from "./components/About";
 import Header from "./components/Header";
 import Home from "./components/Home";
-import ImageComponent from "./components/ImageComponent";
-import NavBarNew from "./components/NavBarNew";
 
 function App() {
   const renderPage = () => {

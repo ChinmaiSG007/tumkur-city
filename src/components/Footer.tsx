@@ -1,5 +1,3 @@
-import React from "react";
-
 const Footer = () => {
   return (
     <div className="d-flex justify-content-space-between align-items-center">
