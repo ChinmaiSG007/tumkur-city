@@ -6,7 +6,7 @@
 }
 
 .logo {
-  height: 6em;
+  height: 8rem;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
@@ -75,7 +75,7 @@
 .box-new {
   margin: 5px;
   width: 250px;
-  height: 350px;
+  height: 250px;
   background-color: #6d6d6d;
   /* border: solid 4px gray; */
   border-radius: 12px;
@@ -174,4 +174,25 @@
     transform: translateX(0);
     opacity: 1;
   }
+}
+
+.search-icon-container {
+  padding: 10px;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.carousel-custom {
+  max-height: 600px;
+  margin: 5rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-custom img {
+  overflow: hidden;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }

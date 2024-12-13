@@ -2,6 +2,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { FaSearch } from "react-icons/fa";
 
 const navBarData = [
   {
@@ -63,6 +64,9 @@ const NavBarNew = () => {
           <Nav className="mr-auto section-nav" style={navStyle}>
             {menuShow(navBarData)}
           </Nav>
+          <div className="search-icon-container" style={{ marginLeft: "auto" }}>
+            <FaSearch size={24} color="currentColor" />
+          </div>
         </Navbar.Collapse>
       </Navbar>
     </div>

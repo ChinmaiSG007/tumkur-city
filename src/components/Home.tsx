@@ -1,10 +1,12 @@
 import ImageComponent from "./ImageComponent";
 import Footer from "./Footer";
+import ImageCarousel from "./ImageCarousel";
 
 const Home = () => {
   return (
     <div>
-      <ImageComponent />
+      {/* <ImageComponent /> */}
+      <ImageCarousel />
       <Footer />
     </div>
   );

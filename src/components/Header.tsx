@@ -9,12 +9,12 @@ const Header = () => {
         <div className="d-flex align-items-center">
           <img src={SIT} alt="SIT logo" className="logo" />
           <Navbar.Brand href="#home">
-            <h1 className=" pl-3 text-white">
+            <h1 className=" pl-3 text-2xl text-white">
               <b>P DAD</b>
             </h1>
           </Navbar.Brand>
         </div>
-        <h1 className="pl-3 float-left text-2xl font-extrabold animated-header">
+        <h1 className="pl-3 float-left text-4xl font-extrabold animated-header">
           <span className="word word-1">PAVEMENT</span>
           <span className="word word-2">DATA</span>
           <span className="word word-3">AGGREGATION</span>
