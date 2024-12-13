@@ -1,4 +1,3 @@
-import ImageComponent from "./ImageComponent";
 import Footer from "./Footer";
 import ImageCarousel from "./ImageCarousel";
 
